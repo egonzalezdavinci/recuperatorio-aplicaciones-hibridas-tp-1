@@ -4,7 +4,6 @@ import projectRouteApi from './api/routers/project-api-routers.js';
 
 const app = express();
 
-app.use(express.urlencoded({extended:true}));
 app.use('/api', express.json());
 app.use('/',express.static('view'));
 
